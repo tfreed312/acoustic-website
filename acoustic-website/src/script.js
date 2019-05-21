@@ -480,10 +480,10 @@ function myFunction() {
       XYpos += 1;
       XPos = 3 * Math.cos((3.14 * XYpos) / 600)
       YPos = 3 * Math.sin((3.14 * XYpos) / 600)
-      source3.setPosition(XPos, YPos, source3Z);
-      source4.setPosition(XPos, YPos, source4Z);
-      source5.setPosition(XPos, YPos, source5Z);
-      source6.setPosition(XPos, YPos, source6Z);
+      source3.setPosition(0, 3, source3Z);
+      source4.setPosition(0, 3, source4Z);
+      source5.setPosition(0, 3, source5Z);
+      source6.setPosition(0, 3, source6Z);
     }
   }
 }

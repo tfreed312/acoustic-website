@@ -9,7 +9,6 @@ var seconds = null;
 var condition = true;
 var stamp = 1;
 
-
 var XYpos = 0;
 
 var XPos = 5;
@@ -18,6 +17,7 @@ var YPos = 0;
 function myFunction() {
   if (audioContext == null) {
     let audioContext = new AudioContext();
+
 
   // Create a (first-order Ambisonic) Resonance Audio scene and pass it
   // the AudioContext.
@@ -61,7 +61,6 @@ function myFunction() {
   let audioElement7 = document.createElement('audio');
   let audioElement8 = document.createElement('audio');
 
-
   // Load an audio file into the AudioElement.
   audioElement1.crossOrigin = "anonymous";
   audioElement2.crossOrigin = "anonymous";
@@ -72,14 +71,12 @@ function myFunction() {
   audioElement7.crossOrigin = "anonymous";
   audioElement8.crossOrigin = "anonymous";
 
-  
-  audioElement1.src = './src/audio/UspsHomepage.mp3';
-  audioElement2.src = './src/audio/Section1.mp3';
-  audioElement3.src = './src/audio/BeyonceHalo.mp3';
-  audioElement4.src = './src/audio/section2back.mp3';
-  audioElement5.src = './src/audio/section3back.mp3';
-  audioElement6.src = './src/audio/section4back.mp3';
-
+  audioElement1.src = 'https://1317375494.rsc.cdn77.org/audio/UspsHomepage.mp3';
+  audioElement2.src = 'https://1317375494.rsc.cdn77.org/audio/Section1.mp3';
+  audioElement3.src = 'https://1317375494.rsc.cdn77.org/audio/BeyonceHalo.mp3';
+  audioElement4.src = 'https://1317375494.rsc.cdn77.org/audio/section2back.mp3';
+  audioElement5.src = 'https://1317375494.rsc.cdn77.org/audio/section3back.mp3';
+  audioElement6.src = 'https://1317375494.rsc.cdn77.org/audio/section4back.mp3';
 
   // Generate a MediaElementSource from the AudioElement.
   let audioElementSource = audioContext.createMediaElementSource(audioElement1);
@@ -137,13 +134,13 @@ function myFunction() {
   var section1 = [];
 
   section1[0] = QuickTools;
-  section1[1] = './src/audio/QuickTools.mp3';
+  section1[1] = 'https://1317375494.rsc.cdn77.org/audio/QuickTools.mp3';
   section1[2] = Business;
-  section1[3] = './src/audio/Business.mp3';
+  section1[3] = 'https://1317375494.rsc.cdn77.org/audio/Business.mp3';
   section1[4] = Help;
-  section1[5] = './src/audio/Help.mp3';
+  section1[5] = 'https://1317375494.rsc.cdn77.org/audio/Help.mp3';
   section1[6] = null;
-  section1[7] = './src/audio/ImageDscrpt.mp3';
+  section1[7] = 'https://1317375494.rsc.cdn77.org/audio/ImageDscrpt.mp3';
 
 
   // Make array to contain sounds of Section 2.
@@ -154,9 +151,9 @@ function myFunction() {
   var section2 = [];
 
   section2[0] = WhatWeDo;
-  section2[1] = './src/audio/WhatWeDo.mp3';
+  section2[1] = 'https://1317375494.rsc.cdn77.org/audio/WhatWeDo.mp3';
   section2[2] = LearnMore;
-  section2[3] = './src/audio/LearnMoreClickable.mp3';
+  section2[3] = 'https://1317375494.rsc.cdn77.org/audio/LearnMoreClickable.mp3';
 
   // Make array to contain sounds of Section 3.
 
@@ -166,9 +163,9 @@ function myFunction() {
   var section3 = [];
 
   section3[0] = OurTeam;
-  section3[1] = './src/audio/OurTeam.mp3';
+  section3[1] = 'https://1317375494.rsc.cdn77.org/audio/OurTeam.mp3';
   section3[2] = SampleText;
-  section3[3] = './src/audio/SampleTextPara.mp3';
+  section3[3] = 'https://1317375494.rsc.cdn77.org/audio/SampleTextPara.mp3';
 
   // Make array to contain sounds of Section 4.
 
@@ -177,20 +174,20 @@ function myFunction() {
   var section4 = [];
 
   section4[0] = MoreSample;
-  section4[1] = './src/audio/MoreSample.mp3';
+  section4[1] = 'https://1317375494.rsc.cdn77.org/MoreSample.mp3';
 
   // Make array to contain all sections.
 
   var menus = [];
 
   menus[0] = section1;
-  menus[1] = './src/audio/Section1.mp3';
+  menus[1] = 'https://1317375494.rsc.cdn77.org/audio/Section1.mp3';
   menus[2] = section2;
-  menus[3] = './src/audio/Section2.mp3';
+  menus[3] = 'https://1317375494.rsc.cdn77.org/audio/Section2.mp3';
   menus[4] = section3;
-  menus[5] = './src/audio/Section3.mp3';
+  menus[5] = 'https://1317375494.rsc.cdn77.org/audio/Section3.mp3';
   menus[6] = section4;
-  menus[7] = './src/audio/Section4.mp3';
+  menus[7] = 'https://1317375494.rsc.cdn77.org/audio/Section4.mp3';
 
 
   var totals = [4, 2, 2, 1];
@@ -301,7 +298,7 @@ function myFunction() {
           source1.setPosition(0, 1, 0);
           source2.setPosition(source2X, source2Y, 0);
           audioElement2.src = currentMenu[currentSound];
-          audioElement1.src = './src/audio/UspsHomepage.mp3';
+          audioElement1.src = 'https://1317375494.rsc.cdn77.org/audio/UspsHomepage.mp3';
           audioElement1.play();
 
         } else {
@@ -320,7 +317,7 @@ function myFunction() {
 
           source1.setPosition(0, 1, 0);
           source2.setPosition(source2X, source2Y, 0);
-          audioElement1.src = './src/audio/UspsHomepage.mp3';
+          audioElement1.src = 'https://1317375494.rsc.cdn77.org/audio/UspsHomepage.mp3';
           audioElement1.play();
         }
       }
@@ -417,7 +414,7 @@ function myFunction() {
       // Source 1
       if (listenZ >= (-1 * section1Height) - 2) {
         if (playing3 == false) {
-          audioElement3.src = './src/audio/BeyonceHalo.mp3';
+          audioElement3.src = 'https://1317375494.rsc.cdn77.org/audio/BeyonceHalo.mp3';
           audioElement3.play();
           playing3 = true;  
         }
@@ -433,7 +430,7 @@ function myFunction() {
       if (listenZ <= (-1 * section1Height) + 2 && listenZ >= (-1 * (section1Height + (section2Height * 2))) - 2) {
         if (playing4 == false) {
           console.log(0);
-          audioElement4.src = './src/audio/section2back.mp3';
+          audioElement4.src = 'https://1317375494.rsc.cdn77.org/audio/section2back.mp3';
           audioElement4.play();
           playing4 = true; 
         }
@@ -449,7 +446,7 @@ function myFunction() {
       if (listenZ <= (-1 * (section1Height + (section2Height * 2))) + 2 && listenZ >= (-1 * (section1Height + (section2Height * 2) + (section3Height * 2))) - 2) {
         if (playing5 == false) {
           console.log(0);
-          audioElement5.src = './src/audio/section3back.mp3';
+          audioElement5.src = 'https://1317375494.rsc.cdn77.org/audio/section3back.mp3';
           audioElement5.play();
           playing5 = true; 
         }

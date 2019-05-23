@@ -49,7 +49,7 @@ resonanceAudioScene.setRoomProperties(roomDimensions, roomMaterials);
 //////////////////////////
 
 
-var firstMenu_TotalItems = 9;
+var firstMenu_TotalItems = 10;
 
 
 sources = [];
@@ -79,6 +79,7 @@ firstMenu[5] = './src/audio/Enable.mp3';
 firstMenu[6] = './src/audio/Educate.mp3';
 firstMenu[7] = './src/audio/Employ.mp3';
 firstMenu[8] = './src/audio/SocialMedia.mp3';
+firstMenu[9] = './src/audio/Copyright.mp3';
 
 
 socialMedia = [];

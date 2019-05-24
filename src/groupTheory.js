@@ -9,7 +9,6 @@ function myFunction() {
 
   if (didCreateContext == false) {
 
-
 let audioContext = new AudioContext();
 
 // Create a (first-order Ambisonic) Resonance Audio scene and pass it
@@ -62,55 +61,53 @@ var currTotal = firstMenu_TotalItems;
 
 quickTools = [];
 
-quickTools[0] = './src/audio/Home.mp3';
-quickTools[1] = './src/audio/About.mp3';
-quickTools[2] = './src/audio/Products.mp3';
-quickTools[3] = './src/audio/Team.mp3';
+quickTools[0] = 'https://1317375494.rsc.cdn77.org/audio/Home.mp3';
+quickTools[1] = 'https://1317375494.rsc.cdn77.org/audio/About.mp3';
+quickTools[2] = 'https://1317375494.rsc.cdn77.org/audio/Products.mp3';
+quickTools[3] = 'https://1317375494.rsc.cdn77.org/audio/Team.mp3';
 
 
 firstMenu = [];
 
-firstMenu[0] = './src/audio/GroupTheoryLogo.mp3';
-firstMenu[1] = './src/audio/GroupTheory.mp3';
-firstMenu[2] = './src/audio/BlindnessPuzzle.mp3';
-firstMenu[3] = './src/audio/WeMake.mp3';
-firstMenu[4] = './src/audio/LearnMore.mp3';
-firstMenu[5] = './src/audio/Enable.mp3';
-firstMenu[6] = './src/audio/Educate.mp3';
-firstMenu[7] = './src/audio/Employ.mp3';
-firstMenu[8] = './src/audio/SocialMedia.mp3';
-firstMenu[9] = './src/audio/Copyright.mp3';
+firstMenu[0] = 'https://1317375494.rsc.cdn77.org/audio/GroupTheoryLogo.mp3';
+firstMenu[1] = 'https://1317375494.rsc.cdn77.org/audio/GroupTheory.mp3';
+firstMenu[2] = 'https://1317375494.rsc.cdn77.org/audio/BlindnessPuzzle.mp3';
+firstMenu[3] = 'https://1317375494.rsc.cdn77.org/audio/WeMake.mp3';
+firstMenu[4] = 'https://1317375494.rsc.cdn77.org/audio/LearnMore.mp3';
+firstMenu[5] = 'https://1317375494.rsc.cdn77.org/audio/Enable.mp3';
+firstMenu[6] = 'https://1317375494.rsc.cdn77.org/audio/Educate.mp3';
+firstMenu[7] = 'https://1317375494.rsc.cdn77.org/audio/Employ.mp3';
+firstMenu[8] = 'https://1317375494.rsc.cdn77.org/audio/SocialMedia.mp3';
+firstMenu[9] = 'https://1317375494.rsc.cdn77.org/audio/Copyright.mp3';
 
 
 socialMedia = [];
 
-socialMedia[0] = './src/audio/LinkedIn.mp3';
-socialMedia[1] = './src/audio/Facebook.mp3';
-socialMedia[2] = './src/audio/Twitter.mp3';
-socialMedia[3] = './src/audio/Instagram.mp3';
-
-
+socialMedia[0] = 'https://1317375494.rsc.cdn77.org/audio/LinkedIn.mp3';
+socialMedia[1] = 'https://1317375494.rsc.cdn77.org/audio/Facebook.mp3';
+socialMedia[2] = 'https://1317375494.rsc.cdn77.org/audio/Twitter.mp3';
+socialMedia[3] = 'https://1317375494.rsc.cdn77.org/audio/Instagram.mp3';
 
 allNotes = [];
 
-allNotes[0] = './src/audio/GTnote1.mp3';
-allNotes[1] = './src/audio/GTnote2.mp3';
-allNotes[2] = './src/audio/GTnote3.mp3';
-allNotes[3] = './src/audio/GTnote4.mp3';
-allNotes[4] = './src/audio/GTnote5.mp3';
-allNotes[5] = './src/audio/GTnote6.mp3';
-allNotes[6] = './src/audio/GTnote7.mp3';
-allNotes[7] = './src/audio/GTnote8.mp3';
-allNotes[8] = './src/audio/GTnote9.mp3';
-allNotes[9] = './src/audio/GTnote10.mp3';
-allNotes[10] = './src/audio/GTnote11.mp3';
-allNotes[11] = './src/audio/GTnote12.mp3';
+allNotes[0] = 'https://1317375494.rsc.cdn77.org/audio/GTnote1.mp3';
+allNotes[1] = 'https://1317375494.rsc.cdn77.org/audio/GTnote2.mp3';
+allNotes[2] = 'https://1317375494.rsc.cdn77.org/audio/GTnote3.mp3';
+allNotes[3] = 'https://1317375494.rsc.cdn77.org/audio/GTnote4.mp3';
+allNotes[4] = 'https://1317375494.rsc.cdn77.org/audio/GTnote5.mp3';
+allNotes[5] = 'https://1317375494.rsc.cdn77.org/audio/GTnote6.mp3';
+allNotes[6] = 'https://1317375494.rsc.cdn77.org/audio/GTnote7.mp3';
+allNotes[7] = 'https://1317375494.rsc.cdn77.org/audio/GTnote8.mp3';
+allNotes[8] = 'https://1317375494.rsc.cdn77.org/audio/GTnote9.mp3';
+allNotes[9] = 'https://1317375494.rsc.cdn77.org/audio/GTnote10.mp3';
+allNotes[10] = 'https://1317375494.rsc.cdn77.org/audio/GTnote11.mp3';
+allNotes[11] = 'https://1317375494.rsc.cdn77.org/audio/GTnote12.mp3';
 
 menuChords = [];
 
-menuChords[0] = './src/audio/GroupTheoryHomepage.mp3';
-menuChords[1] = './src/audio/quickChord.mp3';
-menuChords[2] = './src/audio/firstMenuChord.mp3';
+menuChords[0] = 'https://1317375494.rsc.cdn77.org/audio/GroupTheoryHomepage.mp3';
+menuChords[1] = 'https://1317375494.rsc.cdn77.org/audio/quickChord.mp3';
+menuChords[2] = 'https://1317375494.rsc.cdn77.org/audio/firstMenuChord.mp3';
 
 
 allMenus = [quickTools, firstMenu, socialMedia];
@@ -538,7 +535,6 @@ audioElement11.play();
     function myTimer() {
       currElement.play();
     } 
-
 
     didCreateContext = true;
 
